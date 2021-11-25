@@ -1,0 +1,38 @@
+<ion-header >
+  <ion-toolbar class="background-color-blue">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Recuperar contraseña</ion-title>
+  </ion-toolbar>
+
+  <ion-toolbar class="background-color-white">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Hemos enviado un codigo de validacion a tu correo electronico. Ingresalo para que podamos continuar</ion-title>
+  </ion-toolbar>
+  
+</ion-header>
+
+<ion-content class='background-duoc'>
+  
+
+
+    <ion-item lines="full">
+      <ion-label position="floating">Ingrese codigo de verificacion</ion-label>
+      <ion-input type="password" required></ion-input>
+    </ion-item>
+ 
+      <ion-row>
+      <ion-col>
+        <ion-button type="submit" routerLink="/login" expand="block" class="background-color-blue">Confirmar</ion-button>
+
+        <html> &nbsp;&nbsp;&nbsp;&nbsp; </html>
+        
+       
+        <ion-button type="submit" routerLink="/home" class="background-color-white" expand="block">Volver</ion-button>
+      </ion-col>
+    </ion-row>
+
+</ion-content>

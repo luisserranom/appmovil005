@@ -1,20 +1,38 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+
+<ion-header>
+  <ion-toolbar  class='background-duoc' class="background-color-blue">
+  </ion-toolbar>
+  <ion-toolbar class="background-color-white">
+    <ion-title>Bienvenido</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<ion-content class='background-duoc'>
+  <form>
+      <ion-row>
+      <ion-col>
+        <ion-button expand="full" routerLink="/login"  expand="block" class="background-color-blue" >Iniciar Sesion</ion-button>
+        <ion-button routerLink="/recuperar" type="submit"  expand="block" class="background-color-blue">Recuperar contraseña</ion-button>
+        <ion-button routerLink="/salir" type="submit"  expand="block" class="background-color-white">Salir</ion-button>
+        <button (click)="getAllTasks()">Listar Usuarios</button>
+        <button (click)="getTask()">Listar un Usuario</button>
+        
+        
+      </ion-col>
+    </ion-row>
+
+  </form>
 </ion-content>
+
+   
+       
+
+
+
+
+<ion-footer>
+  <ion-toolbar class="background-color-blue">
+  </ion-toolbar>
+ 
+
